@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * 一个异步查询类，利用mysqli扩展和mysqlnd驱动实现；
+ * 底层是使用的是多路复用select轮询网络IO
+ */
 class AsyncMysqli {
 
 	protected $_enable = false;
